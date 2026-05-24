@@ -3,8 +3,7 @@
 A high-performance, interactive personal portfolio website showcasing expertise in Graphic Design, WordPress Development, and Frontend Engineering.
 
 ## 🚀 Live Demo
-[https://aliraza.me](https://aliraza.me) *(Update this with your actual URL)*
-
+[[https://alyrizwani.github.io/ali-raza](https://alyrizwani.github.io/ali-raza/) 
 ## ✨ Key Features
 - **Modern & Interactive UI:** Features 3D mouse parallax on the hero section and a custom magnetic CTA button.
 - **Neural Network Background:** An interactive particle background that reacts to mouse movement across the entire site.
@@ -17,7 +16,7 @@ A high-performance, interactive personal portfolio website showcasing expertise 
 - **Logic:** Vanilla JavaScript (ES6+)
 - **Styling:** Advanced CSS3 (Custom Variables, Flexbox, Grid, Glassmorphism)
 - **Structure:** Semantic HTML5
-- **Icons:** [Lucide Icons](https://lucide.dev/)
+- **Icons:** [UX Wing Icons](https://uxwing.com/)
 - **Animation:** Canvas API for interactive particles
 
 ## 📁 Project Structure
