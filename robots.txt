@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aliraza.me/sitemap.xml # Replace with your actual URL
+Sitemap: https://alyrizwani.github.io/ali-raza/sitemap.xml
