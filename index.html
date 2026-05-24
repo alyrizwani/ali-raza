@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Raza | Creative Graphic Designer & WordPress Developer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Ali Raza is an expert Graphic Designer, WordPress Developer, and Frontend Developer in Rawalpindi & Islamabad. Specializing in branding, UI/UX, and custom web development.">
+    <meta name="keywords"
+        content="Ali Raza portfolio, Graphic Designer Rawalpindi, WordPress Developer Islamabad, Frontend Developer Pakistan, Web Designer, UI/UX Design, Figma, Adobe Illustrator, Custom WordPress Websites">
+    <link rel="canonical" href="https://aliraza.me"> <!-- Replace with your actual URL -->
+    <meta name="author" content="Ali Raza">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ali Raza | Graphic Designer & Web Developer">
+    <meta property="og:description"
+        content="Explore the creative design and high-performance web development portfolio of Ali Raza.">
+    <meta property="og:image" content="assets/reference_design.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Ali Raza | Graphic Designer & Web Developer">
+    <meta property="twitter:description"
+        content="Explore the creative design and high-performance web development portfolio of Ali Raza.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/code-icon.svg">
+</head>
+
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas" class="background-canvas"></canvas>
+
+    <!-- Interactive Mouse Trail Glow -->
+    <div id="interactive-glow" class="mouse-glow"></div>
+
+    <!-- Floating Navigation Bar -->
+    <header class="header">
+        <div class="header-pill" id="nav-pill">
+            <a href="#" class="logo-group">
+                <span class="logo-dot">AR</span>
+                <span class="logo-text">Ali Raza</span>
+            </a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <img src="assets/color-adjust-icon.svg" alt="Theme Toggle" class="theme-icon">
+                </button>
+                <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sleek Overlay Mobile Menu -->
+    <nav class="mobile-menu" id="mobile-menu-overlay">
+        <div class="mobile-menu-links">
+            <a href="#" class="menu-link active">Home</a>
+            <a href="#about" class="menu-link">About</a>
+            <a href="#projects" class="menu-link">Projects</a>
+            <a href="#skills" class="menu-link">Skills</a>
+            <a href="#experience" class="menu-link">Experience</a>
+            <a href="#education" class="menu-link">Education</a>
+            <a href="#certifications" class="menu-link">Certifications</a>
+            <a href="#contact" class="menu-link">Contact</a>
+        </div>
+        <div class="menu-footer">
+            <p>Islamabad, Pakistan</p>
+            <p><a href="mailto:alyrizwani09i@gmail.com">alyrizwani09i@gmail.com</a></p>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <main class="hero-container" id="hero">
+
+        <!-- Large Glowing Backlights -->
+        <div class="backlight backlight-gold"></div>
+        <div class="backlight backlight-bronze"></div>
+
+        <!-- Huge Typographic Background (Behind Portrait) -->
+        <div class="bg-typo-container">
+            <h1 class="bg-text-outline" id="parallax-bg-text">ALI RAZA</h1>
+        </div>
+
+        <div class="hero-content">
+
+            <!-- Left Column: Intro & Headline -->
+            <div class="hero-left">
+                <!-- Availability Badge -->
+                <div class="badge-container">
+                    <div class="avail-badge">
+                        <span class="pulse-dot"></span>
+                        <span class="badge-text">Available for freelance</span>
+                    </div>
+                </div>
+
+                <!-- Main Bold Headline -->
+                <h1 class="hero-headline">
+                    Creative Graphic <br>
+                    <span>Designer & WordPress</span> <br>
+                    Developer
+                </h1>
+                <!-- Quick Contact Pill for Desktop -->
+                <div class="contact-pill-desktop">
+                    <span class="location-tag"><i data-lucide="map-pin"></i> Islamabad, Pakistan</span>
+                </div>
+            </div>
+
+            <!-- Center Column: User Cutout Portrait -->
+            <div class="hero-center" id="portrait-wrapper">
+                <div class="portrait-container">
+                    <div class="portrait-crop-wrapper">
+                        <img src="assets/ali-raza.png" alt="Ali Raza - Graphic Designer and WordPress Developer Portrait" class="portrait-img" id="hero-portrait">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Brief and Actions -->
+            <div class="hero-right">
+                <!-- Summary Card -->
+                <div class="summary-wrapper">
+                    <p class="summary-text">
+                        Hi, I'm Ali Raza — a B.Sc. Computer Science student at NUML Islamabad. I combine graphic design
+                        technology with custom WordPress development and interactive frontend coding to create websites
+                        that connect and convert.
+                    </p>
+                </div>
+
+                <!-- Sleek Interactive CTA Button -->
+                <div class="cta-wrapper">
+                    <a href="#contact" class="cta-btn primary-cta" id="cta-email-btn">
+                        <span class="cta-btn-text">Let's collaborate</span>
+                        <span class="cta-arrow-circle">
+                            <i data-lucide="arrow-up-right" class="arrow-icon"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+
+            <!-- Left Column: Text Content -->
+            <div class="about-text fade-up">
+                <span class="about-label">ABOUT ME</span>
+                <h2 class="about-headline">
+                    I design & develop<br>
+                    <span>brands, websites</span><br>
+                    and experiences.
+                </h2>
+                <p class="about-description">
+                    Motivated Graphic Designer and WordPress Developer currently pursuing a B.Sc. in Computer Science at
+                    National University of Modern Languages. Proven hands-on experience creating visually engaging
+                    designs and developing responsive WordPress websites through multiple internships. Skilled in
+                    transforming creative concepts into impactful digital experiences using modern design tools and web
+                    technologies. Passionate about branding, UI aesthetics, and delivering user-friendly websites while
+                    thriving in collaborative and fast-paced environments.
+                </p>
+                <div class="about-stats fade-up">
+                    <div class="stat-box glass">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                    <div class="stat-box glass">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Live Projects</span>
+                    </div>
+                    <div class="stat-box glass">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+                <div class="about-cta-group fade-up">
+                    <a href="assets/Ali_Raza.pdf" target="_blank" class="about-btn primary" id="download-cv-btn">
+                        <span>Download CV</span>
+                        <i data-lucide="download" class="btn-icon"></i>
+                    </a>
+                    <a href="#contact" class="about-btn outline" id="learn-more-btn">
+                        <span>Get in touch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Image with Decorative Frame -->
+            <div class="about-image-wrapper fade-up">
+                <div class="about-frame">
+                    <div class="frame-accent"></div>
+                    <img src="assets/design-and-development.png" alt="Ali Raza — Design and Development"
+                        class="about-img" loading="lazy">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="skills-inner">
+
+            <aside class="skills-sidebar" aria-label="Skills">
+                <div class="skills-sidebar-sticky">
+                    <div class="skills-sidebar-accent" aria-hidden="true"></div>
+                    <h2 class="skills-vertical-title">Skills</h2>
+                </div>
+            </aside>
+
+            <div class="skills-body">
+
+                <div class="skills-category fade-up" data-skills-step="0">
+                    <h3 class="skills-category-label">
+                        <span class="skills-category-line" aria-hidden="true"></span>
+                        Development
+                    </h3>
+                    <div class="skills-grid">
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/wordpress-icon.webp" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">WordPress</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/elementor.svg" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">Elementor</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/html5.svg" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">HTML</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/css3.svg" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">CSS</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/javascript.svg" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </article>
+
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap skill-icon-lucide">
+                                <i data-lucide="monitor-smartphone" aria-hidden="true"></i>
+                            </div>
+                            <span class="skill-name">Responsive Web Design</span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="skills-category fade-up" data-skills-step="1">
+                    <h3 class="skills-category-label">
+                        <span class="skills-category-line" aria-hidden="true"></span>
+                        Design
+                    </h3>
+                    <div class="skills-grid">
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/figma.svg" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">Figma</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/adobe-photoshop-icon.webp" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">Adobe Photoshop</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/adobe-illustrator-icon.webp" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">Adobe Illustrator</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/canva-icon.webp" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">Canva</span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="skills-category fade-up" data-skills-step="2">
+                    <h3 class="skills-category-label">
+                        <span class="skills-category-line" aria-hidden="true"></span>
+                        Marketing
+                    </h3>
+                    <div class="skills-grid">
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/meta.svg" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">Meta Ads Campaigns</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap skill-icon-lucide">
+                                <i data-lucide="share-2" aria-hidden="true"></i>
+                            </div>
+                            <span class="skill-name">Social Media Marketing</span>
+                        </article>
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap skill-icon-lucide">
+                                <i data-lucide="target" aria-hidden="true"></i>
+                            </div>
+                            <span class="skill-name">Lead Generation</span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="skills-category fade-up" data-skills-step="3">
+                    <h3 class="skills-category-label">
+                        <span class="skills-category-line" aria-hidden="true"></span>
+                        Productivity Tools
+                    </h3>
+                    <div class="skills-grid">
+                        <article class="skill-card glass">
+                            <div class="skill-icon-wrap">
+                                <img src="assets/skills/microsoft.svg" alt="" width="48" height="48">
+                            </div>
+                            <span class="skill-name">MS Office Suite</span>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+            <aside class="skills-rail" aria-hidden="true">
+                <div class="skills-rail-sticky">
+                    <div class="skills-rail-steps" id="skills-rail-steps">
+                        <span class="skills-rail-dash active" data-step="0"></span>
+                        <span class="skills-rail-dash" data-step="1"></span>
+                        <span class="skills-rail-dash" data-step="2"></span>
+                        <span class="skills-rail-dash" data-step="3"></span>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="experience-section" id="experience">
+        <div class="experience-ambient" aria-hidden="true"></div>
+
+        <div class="experience-container">
+            <header class="experience-header fade-up">
+                <span class="experience-label">Career Path</span>
+                <h2 class="experience-title">
+                    Work <span>Experience</span>
+                </h2>
+                <p class="experience-intro">
+                    Three internships across WordPress, agency builds, and frontend — turning briefs into
+                    shipped, responsive products.
+                </p>
+            </header>
+
+            <div class="experience-timeline-wrap fade-up">
+                <div class="timeline-rail" aria-hidden="true">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-progress" id="timeline-progress"></div>
+                </div>
+
+                <div class="experience-cards" id="experience-cards">
+
+                    <article class="exp-card glass is-open is-active" data-exp-card>
+                        <button class="exp-card-toggle" type="button" aria-expanded="true">
+                            <span class="exp-node" aria-hidden="true">
+                                <span class="exp-node-ring"></span>
+                                <span class="exp-node-dot"></span>
+                                <i data-lucide="globe" class="exp-node-icon"></i>
+                            </span>
+                            <span class="exp-card-summary">
+                                <span class="exp-meta-row">
+                                    <span class="exp-badge exp-badge--current">Present</span>
+                                    <span class="exp-date">Mar 2026 — Present</span>
+                                </span>
+                                <span class="exp-role">WordPress Developer Intern</span>
+                                <span class="exp-company">Ringchan Tours · Islamabad <em>(Onsite)</em></span>
+                            </span>
+                            <span class="exp-chevron" aria-hidden="true">
+                                <i data-lucide="chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="exp-card-details">
+                            <div class="exp-card-details-inner">
+                                <ul class="exp-list">
+                                    <li>Customized the Travilia WordPress theme for a tourism platform</li>
+                                    <li>Integrated third-party plugins and developed custom WordPress plugins</li>
+                                    <li>Built a fully functional tourism website with tour listings, booking
+                                        functionality, and responsive design</li>
+                                    <li>Improved website usability and mobile responsiveness for better user experience
+                                    </li>
+                                </ul>
+                                <div class="exp-tags">
+                                    <span>WordPress</span>
+                                    <span>Travilia</span>
+                                    <span>Plugins</span>
+                                    <span>Tourism</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="exp-card glass" data-exp-card>
+                        <button class="exp-card-toggle" type="button" aria-expanded="false">
+                            <span class="exp-node" aria-hidden="true">
+                                <span class="exp-node-ring"></span>
+                                <span class="exp-node-dot"></span>
+                                <i data-lucide="layout-template" class="exp-node-icon"></i>
+                            </span>
+                            <span class="exp-card-summary">
+                                <span class="exp-meta-row">
+                                    <span class="exp-badge">Internship</span>
+                                    <span class="exp-date">Jul 2025 — Sep 2025</span>
+                                </span>
+                                <span class="exp-role">WordPress Developer Intern</span>
+                                <span class="exp-company">Innoventix Hub · Rawalpindi <em>(Onsite)</em></span>
+                            </span>
+                            <span class="exp-chevron" aria-hidden="true">
+                                <i data-lucide="chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="exp-card-details">
+                            <div class="exp-card-details-inner">
+                                <ul class="exp-list">
+                                    <li>Designed and launched agency websites using WordPress, Elementor, and custom CSS
+                                    </li>
+                                    <li>Developed client websites from wireframes to live deployment</li>
+                                    <li>Collaborated with the design team to ensure pixel-perfect UI implementation</li>
+                                    <li>Integrated third-party plugins and optimized website performance and
+                                        responsiveness</li>
+                                </ul>
+                                <div class="exp-tags">
+                                    <span>Elementor</span>
+                                    <span>WordPress</span>
+                                    <span>Custom CSS</span>
+                                    <span>Agency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="exp-card glass" data-exp-card>
+                        <button class="exp-card-toggle" type="button" aria-expanded="false">
+                            <span class="exp-node" aria-hidden="true">
+                                <span class="exp-node-ring"></span>
+                                <span class="exp-node-dot"></span>
+                                <i data-lucide="code-2" class="exp-node-icon"></i>
+                            </span>
+                            <span class="exp-card-summary">
+                                <span class="exp-meta-row">
+                                    <span class="exp-badge exp-badge--remote">Remote</span>
+                                    <span class="exp-date">Mar 2025 — Apr 2025</span>
+                                </span>
+                                <span class="exp-role">Frontend Developer Intern</span>
+                                <span class="exp-company">Intern Intelligence · Remote</span>
+                            </span>
+                            <span class="exp-chevron" aria-hidden="true">
+                                <i data-lucide="chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="exp-card-details">
+                            <div class="exp-card-details-inner">
+                                <ul class="exp-list">
+                                    <li>Built and styled interactive UI components using HTML, CSS, and JavaScript</li>
+                                    <li>Worked in a remote team environment using version control and collaborative
+                                        workflows</li>
+                                    <li>Delivered weekly development tasks while improving UI consistency and
+                                        responsiveness</li>
+                                </ul>
+                                <div class="exp-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="projects-ambient" aria-hidden="true"></div>
+
+        <div class="projects-container">
+            <header class="projects-header fade-up">
+                <span class="projects-label">Selected Work</span>
+                <h2 class="projects-title">
+                    Featured <span>Projects</span>
+                </h2>
+                <p class="projects-intro">
+                    Live WordPress builds — from tourism platforms to agency sites and personal portfolios.
+                </p>
+            </header>
+
+            <div class="projects-layout fade-up">
+                <nav class="projects-timeline" id="projects-timeline" aria-label="Project timeline">
+                    <div class="projects-timeline-rail" aria-hidden="true">
+                        <div class="projects-timeline-line"></div>
+                        <div class="projects-timeline-progress" id="projects-timeline-progress"></div>
+                    </div>
+                    <button type="button" class="project-step is-active" data-project-step="0" aria-current="true">
+                        <span class="project-step-num">01</span>
+                        <span class="project-step-label">Ringchan</span>
+                    </button>
+                    <button type="button" class="project-step" data-project-step="1" aria-current="false">
+                        <span class="project-step-num">02</span>
+                        <span class="project-step-label">Innoventix</span>
+                    </button>
+                    <button type="button" class="project-step" data-project-step="2" aria-current="false">
+                        <span class="project-step-num">03</span>
+                        <span class="project-step-label">Portfolio</span>
+                    </button>
+                </nav>
+
+                <div class="projects-panels" id="projects-panels">
+
+                    <article class="project-panel glass is-active" data-project-panel="0">
+                        <div class="project-browser">
+                            <div class="project-browser-bar">
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="project-browser-url">ringchantours.com</span>
+                            </div>
+                            <div class="project-browser-preview project-preview--tourism">
+                                <img src="assets/projects/ringchan-tours.png" alt="Ringchan Tours website homepage"
+                                    class="project-preview-img" loading="lazy">
+                                <span class="project-preview-tag">Tourism</span>
+                            </div>
+                        </div>
+                        <div class="project-panel-body">
+                            <span class="project-index">01</span>
+                            <h3 class="project-name">Ringchan Tours</h3>
+                            <p class="project-desc">
+                                Developed a fully functional tourism website featuring tour listings, booking
+                                functionality, and a responsive user interface optimized for all devices.
+                            </p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>Elementor</span>
+                                <span>Plugin Integration</span>
+                            </div>
+                            <a href="https://ringchantours.com" class="project-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <span>View live site</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-panel glass" data-project-panel="1">
+                        <div class="project-browser">
+                            <div class="project-browser-bar">
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="project-browser-url">innoventixhub.com</span>
+                            </div>
+                            <div class="project-browser-preview project-preview--agency">
+                                <span class="project-preview-tag">Agency</span>
+                            </div>
+                        </div>
+                        <div class="project-panel-body">
+                            <span class="project-index">02</span>
+                            <h3 class="project-name">Innoventix Hub</h3>
+                            <p class="project-desc">
+                                Built a complete agency website from scratch to showcase services, portfolio, and
+                                manage client inquiries with a modern and professional layout.
+                            </p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>Elementor</span>
+                                <span>Custom CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-panel glass" data-project-panel="2">
+                        <div class="project-browser">
+                            <div class="project-browser-bar">
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="project-browser-url">portfolio.ubaid.dev</span>
+                            </div>
+                            <div class="project-browser-preview project-preview--portfolio">
+                                <span class="project-preview-tag">Portfolio</span>
+                            </div>
+                        </div>
+                        <div class="project-panel-body">
+                            <span class="project-index">03</span>
+                            <h3 class="project-name">Ubaid Ur Rehman Portfolio</h3>
+                            <p class="project-desc">
+                                Designed and developed a personal portfolio website with custom branding, smooth
+                                navigation, and a clean single-page responsive layout.
+                            </p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>Elementor</span>
+                                <span>Custom CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="projects-cta fade-up">
+                <a href="projects.html" class="projects-view-all">
+                    <span>View all projects</span>
+                    <i data-lucide="arrow-right" class="btn-icon"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="education-ambient" aria-hidden="true"></div>
+
+        <div class="education-container">
+            <header class="education-header fade-up">
+                <span class="education-label">Academic Journey</span>
+                <h2 class="education-title">
+                    <span>Education</span>
+                </h2>
+                <p class="education-intro">
+                    Building a strong foundation in computer science — from Skardu to Islamabad.
+                </p>
+            </header>
+
+            <div class="education-timeline-wrap fade-up">
+                <div class="edu-timeline-rail" aria-hidden="true">
+                    <div class="edu-timeline-line"></div>
+                    <div class="edu-timeline-progress" id="edu-timeline-progress"></div>
+                </div>
+
+                <div class="edu-milestones" id="edu-milestones">
+
+                    <article class="edu-card glass is-active" data-edu-card>
+                        <span class="edu-index" aria-hidden="true">01</span>
+                        <button type="button" class="edu-card-trigger" aria-expanded="true">
+                            <span class="edu-node" aria-hidden="true">
+                                <span class="edu-node-ring"></span>
+                                <span class="edu-node-dot"></span>
+                                <i data-lucide="graduation-cap" class="edu-node-icon"></i>
+                            </span>
+                            <span class="edu-card-main">
+                                <span class="edu-meta">
+                                    <span class="edu-badge edu-badge--current">In Progress</span>
+                                    <span class="edu-dates">2023 — 2027</span>
+                                </span>
+                                <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
+                                <p class="edu-school">
+                                    <i data-lucide="building-2"></i>
+                                    National University of Modern Languages
+                                </p>
+                                <span class="edu-level-tag">Undergraduate</span>
+                            </span>
+                        </button>
+                    </article>
+
+                    <article class="edu-card glass" data-edu-card>
+                        <span class="edu-index" aria-hidden="true">02</span>
+                        <button type="button" class="edu-card-trigger" aria-expanded="false">
+                            <span class="edu-node" aria-hidden="true">
+                                <span class="edu-node-ring"></span>
+                                <span class="edu-node-dot"></span>
+                                <i data-lucide="book-open" class="edu-node-icon"></i>
+                            </span>
+                            <span class="edu-card-main">
+                                <span class="edu-meta">
+                                    <span class="edu-badge">Completed</span>
+                                    <span class="edu-dates">2021 — 2023</span>
+                                </span>
+                                <h3 class="edu-degree">Intermediate (ICS)</h3>
+                                <p class="edu-school">
+                                    <i data-lucide="building-2"></i>
+                                    Degree College Skardu
+                                </p>
+                                <span class="edu-level-tag">Intermediate</span>
+                            </span>
+                        </button>
+                    </article>
+
+                    <article class="edu-card glass" data-edu-card>
+                        <span class="edu-index" aria-hidden="true">03</span>
+                        <button type="button" class="edu-card-trigger" aria-expanded="false">
+                            <span class="edu-node" aria-hidden="true">
+                                <span class="edu-node-ring"></span>
+                                <span class="edu-node-dot"></span>
+                                <i data-lucide="school" class="edu-node-icon"></i>
+                            </span>
+                            <span class="edu-card-main">
+                                <span class="edu-meta">
+                                    <span class="edu-badge">Completed</span>
+                                    <span class="edu-dates">2019 — 2021</span>
+                                </span>
+                                <h3 class="edu-degree">Matriculation (Science)</h3>
+                                <p class="edu-school">
+                                    <i data-lucide="building-2"></i>
+                                    High School Newranga Skardu
+                                </p>
+                                <span class="edu-level-tag">Secondary</span>
+                            </span>
+                        </button>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="education-section" id="certifications" style="padding-top: 2rem;">
+        <div class="education-ambient" aria-hidden="true"></div>
+
+        <div class="education-container">
+            <header class="education-header fade-up">
+                <span class="education-label">Achievements</span>
+                <h2 class="education-title">
+                    Licenses & <span>Certifications</span>
+                </h2>
+                <p class="education-intro">
+                    Recognized skills and training across Graphic Design, Web Development, and Digital Marketing.
+                </p>
+            </header>
+
+            <div class="education-timeline-wrap fade-up">
+                <div class="edu-timeline-rail" aria-hidden="true">
+                    <div class="edu-timeline-line"></div>
+                    <div class="edu-timeline-progress" id="cert-timeline-progress"></div>
+                </div>
+
+                <div class="edu-milestones" id="cert-milestones">
+
+                    <article class="edu-card glass is-active" data-cert-card>
+                        <span class="edu-index" aria-hidden="true">01</span>
+                        <button type="button" class="edu-card-trigger" aria-expanded="true">
+                            <span class="edu-node" aria-hidden="true">
+                                <span class="edu-node-ring"></span>
+                                <span class="edu-node-dot"></span>
+                                <i data-lucide="award" class="edu-node-icon"></i>
+                            </span>
+                            <span class="edu-card-main">
+                                <span class="edu-meta">
+                                    <span class="edu-badge edu-badge--current">Competition</span>
+                                    <span class="edu-dates">May 2026</span>
+                                </span>
+                                <h3 class="edu-degree">WorldSkills Pakistan – NAVTTC</h3>
+                                <p class="edu-school">
+                                    <i data-lucide="map-pin"></i>
+                                    NAVTTC Centre of Excellence, Islamabad
+                                </p>
+                                <p
+                                    style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                                    Certificate of Participation as a Competitor in the Final Round in the skill of
+                                    Graphic Design Technology.
+                                </p>
+                            </span>
+                        </button>
+                    </article>
+
+                    <article class="edu-card glass" data-cert-card>
+                        <span class="edu-index" aria-hidden="true">02</span>
+                        <button type="button" class="edu-card-trigger" aria-expanded="false">
+                            <span class="edu-node" aria-hidden="true">
+                                <span class="edu-node-ring"></span>
+                                <span class="edu-node-dot"></span>
+                                <i data-lucide="monitor-play" class="edu-node-icon"></i>
+                            </span>
+                            <span class="edu-card-main">
+                                <span class="edu-meta">
+                                    <span class="edu-badge">Course</span>
+                                    <span class="edu-dates">Duration: 3 Months</span>
+                                </span>
+                                <h3 class="edu-degree">E-Commerce Course</h3>
+                                <p class="edu-school">
+                                    <i data-lucide="building-2"></i>
+                                    NAVTTC Centre of Excellence, Islamabad
+                                </p>
+                                <p
+                                    style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                                    Trained in digital marketing, Facebook Marketplace, Meta ad campaigns, Instagram
+                                    ads, and social media management.
+                                </p>
+                            </span>
+                        </button>
+                    </article>
+
+                    <article class="edu-card glass" data-cert-card>
+                        <span class="edu-index" aria-hidden="true">03</span>
+                        <button type="button" class="edu-card-trigger" aria-expanded="false">
+                            <span class="edu-node" aria-hidden="true">
+                                <span class="edu-node-ring"></span>
+                                <span class="edu-node-dot"></span>
+                                <i data-lucide="pen-tool" class="edu-node-icon"></i>
+                            </span>
+                            <span class="edu-card-main">
+                                <span class="edu-meta">
+                                    <span class="edu-badge">Course</span>
+                                    <span class="edu-dates">Duration: 3 Months</span>
+                                </span>
+                                <h3 class="edu-degree">Graphic Design Course</h3>
+                                <p class="edu-school">
+                                    <i data-lucide="building-2"></i>
+                                    Next Planner’s Academy, Skardu
+                                </p>
+                                <p
+                                    style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                                    Trained in Adobe Photoshop and Illustrator, covering design principles, typography,
+                                    color theory, layout design, and visual communication.
+                                </p>
+                            </span>
+                        </button>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="projects-cta fade-up" style="margin-top: 4rem;">
+                <a href="certifications.html" class="projects-view-all">
+                    <span>View all certifications</span>
+                    <i data-lucide="arrow-right" class="btn-icon"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-ambient" aria-hidden="true"></div>
+        <div class="contact-container fade-up">
+            <header class="contact-header">
+                <span class="contact-label">Let's Connect</span>
+                <h2 class="contact-title">
+                    Get in <span>Touch</span>
+                </h2>
+                <p class="contact-intro">
+                    Ready to start a project or just want to say hi? I'd love to hear from you.
+                </p>
+            </header>
+
+            <div class="contact-grid">
+                <!-- Left: Contact Info -->
+                <div class="contact-info-cards">
+                    <a href="mailto:alyrizwani09i@gmail.com" class="contact-card glass">
+                        <div class="contact-card-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">Email</span>
+                            <span class="contact-card-value">alyrizwani09i@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+923425615728" class="contact-card glass">
+                        <div class="contact-card-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">Phone</span>
+                            <span class="contact-card-value">+92 342 5615728</span>
+                        </div>
+                    </a>
+
+                    <div class="contact-card glass">
+                        <div class="contact-card-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">Location</span>
+                            <span class="contact-card-value">Rawalpindi, Pakistan</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials glass">
+                        <span class="socials-label">Follow Me</span>
+                        <div class="socials-links">
+                            <a href="https://github.com/alyrizwani" target="_blank" class="social-icon"
+                                aria-label="GitHub">
+                                <img src="assets/github-white-icon.svg" alt="GitHub" width="22" height="22">
+                            </a>
+                            <a href="https://instagram.com/aly_rizwanii_09" target="_blank" class="social-icon"
+                                aria-label="Instagram">
+                                <img src="assets/instagram-white-icon.svg" alt="Instagram" width="22" height="22">
+                            </a>
+                            <a href="https://linkedin.com/in/ali-raza-68361b380" target="_blank" class="social-icon"
+                                aria-label="LinkedIn">
+                                <img src="assets/linkedin-app-white-icon.svg" alt="LinkedIn" width="22" height="22">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form-wrapper glass">
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <input type="hidden" name="access_key" value="29f15a64-e1af-4186-b2fb-d58537f84870">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Ali"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="ali@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="How can I help?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Your message..."
+                                rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-btn primary-cta form-submit"
+                            style="max-width: 100%; justify-content: center; gap: 0.8rem; padding-left: 0.6rem;">
+                            <span class="cta-btn-text">Send Message</span>
+                            <span class="cta-arrow-circle" style="width: 2.2rem; height: 2.2rem;">
+                                <i data-lucide="send" class="arrow-icon" style="width: 14px; height: 14px;"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-skills-scroller">
+            <div class="skills-track">
+                <span>FIGMA • ELEMENTOR • ADOBE ILLUSTRATOR • FRONTEND DEVELOPMENT • ADOBE PHOTOSHOP • DIGITAL MARKETING
+                    • RESPONSIVE WEB DESIGN • META ADS</span>
+                <span>FIGMA • ELEMENTOR • ADOBE ILLUSTRATOR • FRONTEND DEVELOPMENT • ADOBE PHOTOSHOP • DIGITAL MARKETING
+                    • RESPONSIVE WEB DESIGN • META ADS</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <a href="#" class="logo-group" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"
+                    style="text-decoration: none;">
+                    <span class="logo-dot">AR</span>
+                    <span class="logo-text">Ali Raza</span>
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2026 Ali Raza. All rights reserved.</p>
+            </div>
+
+            <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+                aria-label="Back to top">
+                <i data-lucide="arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923425615728" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="assets/whatsapp-color-icon.svg" alt="WhatsApp" width="36" height="36">
+    </a>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

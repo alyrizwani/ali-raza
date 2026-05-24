@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aliraza.me/sitemap.xml # Replace with your actual URL
