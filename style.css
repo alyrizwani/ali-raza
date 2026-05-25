@@ -87,6 +87,8 @@
 
 html {
     scroll-padding-top: 100px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -94,6 +96,8 @@ body {
     color: var(--text-primary);
     font-family: var(--font-body);
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
     min-height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -3086,6 +3090,12 @@ body {
 
 /* Medium Tablets & Phablets Breakpoint */
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+        width: 100%;
+        position: relative;
+    }
+
     .header-pill {
         gap: 1.5rem;
         padding: 0.5rem 0.6rem 0.5rem 1.2rem;
@@ -3104,8 +3114,10 @@ body {
         gap: 1.5rem;
     }
 
-    .mouse-glow, .backlight {
-        display: none; /* Performance & potential overflow fix */
+    .mouse-glow, .backlight, 
+    .projects-ambient, .experience-ambient, 
+    .education-ambient, .contact-ambient {
+        display: none !important;
     }
 
     .bg-text-outline {
@@ -3126,8 +3138,9 @@ body {
         order: 2;
         min-height: auto;
         padding: 0;
-        margin-top: 1.5rem;
-        z-index: 1; /* Under the intro text */
+        margin-top: -10.5rem;
+        z-index: 1;
+        overflow: hidden; /* Prevent horizontal bleed */
     }
 
     .hero-right {
@@ -3178,6 +3191,8 @@ body {
 
     .footer-skills-scroller {
         width: 100%;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .about-section {
@@ -3227,8 +3242,9 @@ body {
 
     .projects-timeline {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 1.5rem 2.5rem;
         padding-top: 0;
         padding-right: 0;
         align-self: auto;
