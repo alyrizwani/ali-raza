@@ -3034,7 +3034,7 @@ body {
 
     .hero-content {
         grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+        gap: 2rem;
         margin-bottom: 2.5rem;
     }
 
@@ -3045,13 +3045,12 @@ body {
 
     .hero-headline {
         margin-bottom: 1.5rem;
+        font-size: clamp(2rem, 5vw, 3rem);
     }
 
     .portrait-img {
-        max-height: 65vh;
+        max-height: 55vh;
     }
-
-
 
     .about-content {
         gap: 3rem;
@@ -3062,7 +3061,7 @@ body {
     }
 
     .skills-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .projects-layout {
@@ -3088,18 +3087,30 @@ body {
 /* Medium Tablets & Phablets Breakpoint */
 @media (max-width: 768px) {
     .header-pill {
-        gap: 1.8rem;
+        gap: 1.5rem;
+        padding: 0.5rem 0.6rem 0.5rem 1.2rem;
     }
 
     .hero-container {
         padding-top: 6.5rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 2rem;
     }
 
     .hero-content {
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .mouse-glow, .backlight {
+        display: none; /* Performance & potential overflow fix */
+    }
+
+    .bg-text-outline {
+        font-size: clamp(4rem, 12vw, 8rem);
+        opacity: 0.5;
     }
 
     /* Reordering elements for logical top-down stacked flow */
@@ -3107,13 +3118,16 @@ body {
         grid-column: 1;
         order: 1;
         align-items: center;
+        padding-right: 0;
     }
 
     .hero-center {
         grid-column: 1;
         order: 2;
         min-height: auto;
-        padding: 1rem 0;
+        padding: 0;
+        margin-top: 1.5rem;
+        z-index: 1; /* Under the intro text */
     }
 
     .hero-right {
@@ -3121,21 +3135,31 @@ body {
         order: 3;
         align-items: center;
         text-align: center;
+        padding-left: 0;
+        margin-top: -4rem; /* Overlap image slightly */
+        position: relative;
+        z-index: 2; /* Ensure text is on top */
     }
 
     .summary-wrapper {
-        max-width: 480px;
+        max-width: 100%;
         margin-bottom: 2rem;
+        background: rgba(7, 7, 10, 0.4); /* Add slight background for readability on overlap */
+        backdrop-filter: blur(8px);
+        padding: 1.25rem;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .portrait-img {
-        max-height: 55vh;
-        max-width: 440px;
+        max-height: 80vh; /* Extremely large */
+        max-width: 110%; /* Allow slight bleed for dominance */
+        width: auto;
+        transform: scale(1.1);
     }
 
     .contact-pill-desktop {
         display: none;
-        /* Hide on mobile to declutter hero, contacts are in footer */
     }
 
     .hero-footer {
@@ -3144,6 +3168,7 @@ body {
         padding-top: 1.5rem;
         align-items: center;
         text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .footer-contacts {
@@ -3151,7 +3176,9 @@ body {
         gap: 1.2rem;
     }
 
-
+    .footer-skills-scroller {
+        width: 100%;
+    }
 
     .about-section {
         padding: 5rem 5% 4rem 5%;
@@ -3160,7 +3187,7 @@ body {
     .about-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 3rem;
+        gap: 2.5rem;
     }
 
     .about-description {
@@ -3373,36 +3400,61 @@ body {
 /* Extra Small Mobile Devices */
 @media (max-width: 480px) {
     .hero-headline {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
     }
 
     .bg-text-outline {
-        font-size: 4.8rem;
+        font-size: 4rem;
     }
 
     .portrait-img {
-        max-height: 48vh;
-        max-width: 310px;
+        max-height: 85vh; /* Maximum vertical scale */
+        max-width: 120%; /* Bleed significantly to remove empty side space */
+        width: auto;
+        transform: scale(1.15) translateY(2rem); /* Offset to account for bottom overlap */
+    }
+
+    .hero-center {
+        margin-top: 1.5rem;
+        z-index: 1;
+    }
+
+    .hero-right {
+        margin-top: -5rem; /* Increase overlap for small screens */
+        position: relative;
+        z-index: 2;
+    }
+
+    .cta-btn.primary-cta {
+        max-width: 100%;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .cta-arrow-circle {
+        width: 2.2rem;
+        height: 2.2rem;
     }
 
     .footer-contacts {
         flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    .header-pill {
-        padding: 0.4rem 0.5rem 0.4rem 1.1rem;
         gap: 1rem;
     }
 
+    .header-pill {
+        padding: 0.4rem 0.5rem 0.4rem 1rem;
+        gap: 0.8rem;
+        width: 92%;
+    }
+
     .logo-text {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .logo-dot {
         width: 1.8rem;
         height: 1.8rem;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .about-section {
@@ -3410,7 +3462,7 @@ body {
     }
 
     .about-headline {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
 
     .about-stats {
@@ -3425,73 +3477,80 @@ body {
     }
 
     .about-frame {
-        max-width: 300px;
+        max-width: 100%;
     }
 
     .projects-panels {
-        min-height: 580px;
+        min-height: 600px;
     }
 
     .menu-link {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .mobile-menu-links {
-        gap: 1.5rem;
-        margin-bottom: 2.5rem;
+        gap: 1.25rem;
+        margin-bottom: 2rem;
     }
 
     .project-index {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .experience-timeline-wrap {
-        padding-left: 2.25rem;
+        padding-left: 2rem;
     }
 
     .exp-card-toggle {
         grid-template-columns: auto 1fr;
         grid-template-rows: auto auto;
+        padding: 1rem;
     }
 
     .exp-chevron {
         grid-column: 2;
         grid-row: 1;
         justify-self: end;
+        width: 1.8rem;
+        height: 1.8rem;
     }
 
     .exp-meta-row {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.35rem;
+        gap: 0.25rem;
     }
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
+        gap: 0.6rem;
     }
 
     .skill-card {
         padding: 1rem 0.5rem;
-        gap: 0.65rem;
+        gap: 0.5rem;
     }
 
     .skill-icon-wrap {
-        width: 44px;
-        height: 44px;
-    }
-
-    .skill-icon-wrap img {
         width: 40px;
         height: 40px;
     }
 
+    .skill-icon-wrap img {
+        width: 36px;
+        height: 36px;
+    }
+
     .skill-name {
-        font-size: 0.58rem;
+        font-size: 0.55rem;
     }
 
     .form-row {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.25rem;
     }
 }

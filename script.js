@@ -118,32 +118,36 @@ document.addEventListener("DOMContentLoaded", () => {
     let mouseX = 0, mouseY = 0; // Target mouse positions
     let glowX = 0, glowY = 0;   // Current glow positions (for lerp interpolation)
     
-    document.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
+    if (mouseGlow && window.innerWidth > 1024) {
+        document.addEventListener("mousemove", (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
 
-    // Smooth transition / easing for cursor glow (linear interpolation)
-    function animateGlow() {
-        const easing = 0.08;
-        glowX += (mouseX - glowX) * easing;
-        glowY += (mouseY - glowY) * easing;
-        
-        if (mouseGlow) {
-            mouseGlow.style.left = `${glowX}px`;
-            mouseGlow.style.top = `${glowY}px`;
+        // Smooth transition / easing for cursor glow (linear interpolation)
+        function animateGlow() {
+            const easing = 0.08;
+            glowX += (mouseX - glowX) * easing;
+            glowY += (mouseY - glowY) * easing;
+            
+            if (mouseGlow) {
+                mouseGlow.style.left = `${glowX}px`;
+                mouseGlow.style.top = `${glowY}px`;
+            }
+            
+            requestAnimationFrame(animateGlow);
         }
-        
-        requestAnimationFrame(animateGlow);
+        animateGlow();
+    } else if (mouseGlow) {
+        mouseGlow.style.display = "none";
     }
-    animateGlow();
 
     // 3. 3D Mouse Parallax Depth Effect
     const heroSection = document.getElementById("hero");
     const parallaxText = document.getElementById("parallax-bg-text");
     const portraitImg = document.getElementById("hero-portrait");
     
-    if (heroSection && parallaxText && portraitImg) {
+    if (heroSection && parallaxText && portraitImg && window.innerWidth > 1024) {
         const heroCenter = document.querySelector(".hero-center");
         let isHovered = false;
         let offsetX = 0;
@@ -200,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 4. Magnetic Attraction Force for primary CTA button
     const ctaBtn = document.getElementById("cta-email-btn");
-    if (ctaBtn) {
+    if (ctaBtn && window.innerWidth > 1024) {
         ctaBtn.addEventListener("mousemove", (e) => {
             const rect = ctaBtn.getBoundingClientRect();
             // Calculate cursor coordinates relative to button center

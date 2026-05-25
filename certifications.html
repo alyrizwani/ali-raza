@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .page-header { padding: 8rem 4% 4rem; text-align: center; }
-        .page-title { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem; }
-        .back-link { color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 2rem; }
+        .page-title { font-family: var(--font-heading); font-size: clamp(2rem, 8vw, 3.5rem); margin-bottom: 1rem; letter-spacing: -0.02em; }
+        .back-link { color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.5rem; font-weight: 600; transition: var(--transition-fast); }
+        .back-link:hover { transform: translateX(-4px); }
+
+        @media (max-width: 768px) {
+            .page-header { padding: 6rem 5% 3rem; }
+        }
     </style>
 </head>
 <body>

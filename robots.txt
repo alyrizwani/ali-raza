@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+<<<<<<< HEAD
 Sitemap: https://alyrizwani.github.io/ali-raza/sitemap.xml
+=======
+Sitemap: https://alyrizwani.github.io/ali-raza/sitemap.xml
+>>>>>>> 7258c07 (Mobile Responsive)
